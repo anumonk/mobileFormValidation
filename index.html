@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<!--
+/*
+ * JQuery Mobile Forms Validation Demo.
+ */
+-->
+<html>
+<head>
+    <meta charset="utf-8">
+
+    <title>Form Validation Example</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="css/jquery.mobile-1.1.1.css" />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+    <script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.9/jquery.validate.min.js"></script>
+    <script src="js/vendor/jquery.mobile-1.1.1.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+
+</head>
+
+<body>
+
+    <div data-role="page" id="feedback">
+
+        <div data-role="header">
+          <h1>Feedback Form</h1>
+        </div>
+
+        <div data-role="content">
+            <form action="/snackreview" method="POST">
+                <div data-role="fieldcontain">
+                    <label for="region">Please enter your region:</label>
+                    <select name="region" id="region" data-native-menu="false">
+                        <option></option>
+                        <option>North</option>
+                        <option>South</option>
+                        <option>East</option>
+                        <option>West</option>
+                    </select>
+                </div>
+                <div data-role="fieldcontain">
+                    <fieldset data-role="controlgroup">
+                        <legend>
+                            Please select your favourite snack:
+                        </legend>
+                        <input type="radio" name="snack" id="cheetos">
+                        <label for="cheetos">Cheetos</label>
+                        <input type="radio" name="snack" id="doritos">
+                        <label for="doritos">Doritos</label>
+                        <input type="radio" name="snack" id="fritos">
+                        <label for="fritos">Fritos</label>
+                        <input type="radio" name="snack" id="sunchips">
+                        <label for="sunchips">Sun Chips</label>
+                    </fieldset>
+                </div>
+                <div data-role="fieldcontain">
+                    <label for="feedback">Please describe why you love your favourite snack:</label>
+                    <textarea name="feedback" id="feedback"></textarea>
+                </div>
+                <div class="ui-body ui-body-b">
+                    <fieldset class="ui-grid-a">
+                        <div class="ui-block-a">
+                            <a href="http://jquery.com" data-role="button">Cancel</a>
+                        </div>
+                        <div class="ui-block-b">
+                            <button type="submit" data-role="button">Send Feedback</button>
+                        </div>
+                    </fieldset>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

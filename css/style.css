@@ -1,0 +1,15 @@
+/*
+ * Simple styles for error labels.
+ */
+
+label.error {
+
+    display: block;
+    color: #fe7c6d;
+    margin-top: 0.4em;
+
+}
+
+@media all and (min-width: 450px) {
+  label.error { margin-left:  22.5%; }
+}
